@@ -1,0 +1,11 @@
+{
+  "study_id": "VTX-330-201",
+  "site_id": null,
+  "investigator": null,
+  "payment_to_remittance": [],
+  "invoice_to_payment": [],
+  "invoice_to_activities": [],
+  "remittance_to_activities": [],
+  "activity_to_cta": [],
+  "entity_scope": []
+}
