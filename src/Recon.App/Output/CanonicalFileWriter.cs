@@ -12,9 +12,17 @@ public static class CanonicalFileWriter
         var dir = Path.Combine(outRoot, r.Study.OutSlug);
         Directory.CreateDirectory(dir);
 
+        WriteFile(dir, "chains.json", ChainsPayload(r));
+        WriteFile(dir, "dashboard.json", DashboardPayload(r));
+        WriteFile(dir, "unbilled.json", UnbilledPayload(r));
+        WriteFile(dir, "unpaid.json", UnpaidPayload(r));
+    }
+
+    public static object ChainsPayload(ReconciliationResult r)
+    {
         var studyId = r.Study.Protocol;
 
-        WriteFile(dir, "chains.json", new
+        return new
         {
             study_id = studyId,
             site_id = r.SiteId,
@@ -62,9 +70,14 @@ public static class CanonicalFileWriter
                 site_id = x.SiteId,
                 investigator = x.Investigator,
             }),
-        });
+        };
+    }
 
-        WriteFile(dir, "dashboard.json", new
+    public static object DashboardPayload(ReconciliationResult r)
+    {
+        var studyId = r.Study.Protocol;
+
+        return new
         {
             study_id = studyId,
             site_id = r.Dashboard.SiteId,
@@ -76,9 +89,11 @@ public static class CanonicalFileWriter
             unbilled_estimate = Money(r.Dashboard.UnbilledEstimate),
             exceptions_count = r.Dashboard.ExceptionsCount,
             avg_days_to_payment = r.Dashboard.AvgDaysToPayment is { } d ? Money(d) : (decimal?)null,
-        });
+        };
+    }
 
-        WriteFile(dir, "unbilled.json", r.Unbilled.Select(u => new
+    public static IReadOnlyList<object> UnbilledPayload(ReconciliationResult r) =>
+        r.Unbilled.Select(u => (object)new
         {
             subject_id = u.SubjectId,
             proposed_visit_label = u.ProposedVisitLabel,
@@ -86,9 +101,10 @@ public static class CanonicalFileWriter
             cta_basis = u.CtaBasis,
             evidence = u.Evidence,
             confidence = u.Confidence?.ToString().ToUpperInvariant(),
-        }));
+        }).ToList();
 
-        WriteFile(dir, "unpaid.json", r.Unpaid.Select(u => new
+    public static IReadOnlyList<object> UnpaidPayload(ReconciliationResult r) =>
+        r.Unpaid.Select(u => (object)new
         {
             ref_type = u.RefType.ToString().ToLowerInvariant(),
             ref_id = u.RefId,
@@ -97,8 +113,15 @@ public static class CanonicalFileWriter
             reason = u.Reason == UnpaidReason.SentNotPaid ? "sent_not_paid" : "autopay_no_deposit",
             evidence = u.Evidence,
             confidence = u.Confidence?.ToString().ToUpperInvariant(),
-        }));
-    }
+        }).ToList();
+
+    public static IReadOnlyList<object> ExceptionsPayload(ReconciliationResult r) =>
+        r.Exceptions.Select(x => (object)new
+        {
+            kind = x.Kind.ToString().ToLowerInvariant(),
+            target_ref = x.TargetRef,
+            evidence = x.Evidence,
+        }).ToList();
 
     private static decimal Money(decimal value) => Math.Round(value, 2, MidpointRounding.AwayFromZero);
 

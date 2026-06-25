@@ -1,5 +1,6 @@
 
 
+using Recon.App.Api;
 using Recon.App.Reconciliation;
 
 // `dotnet run --project .\src\Recon.App\ -- --reconcile` runs the orchestrator and exits BEFORE the web host is even built, so `make reconcile` needs no running server.
@@ -21,10 +22,12 @@ if (args.Contains("--reconcile"))
 }
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<ReconResultsProvider>();
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
 app.MapGet("/healthz", () => "ok");
+app.MapReconEndpoints();
 
 app.Run();
 
