@@ -2,19 +2,28 @@ namespace Recon.Domain;
 
 public record Study(
     string Id,
-    string StudyCode, // such as "MRD-204-017" 
+    string StudyCode, // such as "MRD-204-017"
     string Protocol, // "HORIZON"
-    string OutSlug,        
-    decimal HoldbackPct,     
-    decimal OverheadPct,    
+    string OutSlug,
+    decimal HoldbackPct,
+    decimal OverheadPct,
     int PaymentTermsDays,
     string Sponsor,
     string? Cro,
-    IReadOnlyDictionary<string, decimal> Caps); 
+    IReadOnlyDictionary<string, decimal> Caps)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
-public record Site(string Id, string Name, string? Address, string? Number);
+public record Site(string Id, string Name, string? Address, string? Number)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
-public record Investigator(string Id, string Name, string StudyId);
+public record Investigator(string Id, string Name, string StudyId)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record CtaBudgetLine(
     string Id,
@@ -23,89 +32,127 @@ public record CtaBudgetLine(
     string? Procedure,
     decimal BaseAmount, // CTA list price before any overhead markup
     CtaLineKind Kind,
-    decimal? Cap);
+    decimal? Cap)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record Activity(
     string Id,
     string StudyId,
     string SubjectId,
-    string VisitLabelRaw,   
+    string VisitLabelRaw,
     string VisitLabelNorm,
     DateOnly ServiceDate,
     ActivityStatus Status,
     Vendor SourceVendor,
-    string? CtaLineId);
+    string? CtaLineId)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record Invoice(
     string Id,
     string PrintedNumber,
-    string StudyId,
+    string PrintedStudyCode,
+    string StudyId, 
     string? SubjectId,
     DateOnly IssueDate,
+    DateOnly ServiceDate,
     decimal FaceAmount,
     InvoiceKind Kind,
-    IReadOnlyList<InvoiceLine> Lines);
+    IReadOnlyList<InvoiceLine> Lines)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record InvoiceLine(
     string Id,
     string InvoiceId,
     string? VisitLabel,
-    string? ActivityId, 
+    string? ActivityId,
     decimal Amount);
 
 public record Payment(
     string Id,
+    string PrintedRef,       
     string StudyId,
+    string Payor,           
     DateOnly Date,
     decimal Amount,
     PaymentMethod Method,
-    string? RemittanceId,
-    string? BankTxnId);
+    Vendor SourceVendor,
+    string? RemittanceId,    // the remittance this settles
+    string? BankTxnId)       // the deposit it ties to 
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record Remittance(
     string Id,
-    string StudyId,
+    string PrintedRef,       // LR-001 / R-002 / R-INV-S01 — ties to the payment of the same ref (chain 1)
+    string Payor,            
+    string StudyId,          
     DateOnly Date,
-    decimal NetPaid,
-    IReadOnlyList<RemittanceLine> Lines);
+    decimal NetPaid,         
+    IReadOnlyList<RemittanceLine> Lines)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record RemittanceLine(
     string Id,
     string RemittanceId,
-    string? InvoiceRef,      
+    string? InvoiceRef,
     decimal Gross,
-    decimal Adjustment,  
+    decimal Adjustment,
     decimal Paid,
-    string? ActivityId); 
+    string? ActivityId);
 
 public record Autopay(
     string Id,
+    string PrintedRef,       // AP-001
     string StudyId,
     string? SubjectId,
+    string? VisitLabel,      
     DateOnly ScheduledDate,
     decimal ScheduledAmount,
     AutopayStatus Status,
+    Vendor SourceVendor,
     string? BankTxnId,
-    decimal? DepositedAmount);
+    decimal? DepositedAmount)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 
 public record BankTransaction(
     string Id,
+    string ExternalId,       
     DateOnly Date,
     string RawName,
-    decimal Amount,
+    string Category,
+    decimal Amount, 
     bool IsDeposit,
     string? MatchedStudyId,
-    string? MatchedTo); 
+    string? MatchedTo)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record Comm(
     string Id,
     string Channel,
     DateOnly Date,
     string Body,
-    IReadOnlyList<CommFact> Facts);
+    IReadOnlyList<CommFact> Facts)
+{
+    public string SourceDocument { get; init; } = "";
+}
 
 public record CommFact(
     CommFactKind Kind,
-    string TargetRef, 
+    string TargetRef,
     string Note);
+
+
