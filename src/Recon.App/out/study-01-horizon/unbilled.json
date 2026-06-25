@@ -2,31 +2,31 @@
   {
     "subject_id": "S-12-037",
     "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
-    "estimated_amount": 2983.75,
-    "cta_basis": "Screening\u002BTVU",
+    "estimated_amount": 1722.50,
+    "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
   },
   {
     "subject_id": "S-12-039",
     "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
-    "estimated_amount": 2983.75,
-    "cta_basis": "Screening\u002BTVU",
+    "estimated_amount": 1722.50,
+    "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
   },
   {
     "subject_id": "S-12-040",
     "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
-    "estimated_amount": 2983.75,
-    "cta_basis": "Screening\u002BTVU",
+    "estimated_amount": 1722.50,
+    "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
   },
   {
     "subject_id": "S-12-040",
     "proposed_visit_label": "DXA Scan",
-    "estimated_amount": 1373.75,
+    "estimated_amount": 1099.00,
     "cta_basis": "DXA",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
@@ -34,15 +34,15 @@
   {
     "subject_id": "S-12-041",
     "proposed_visit_label": "Screening Visit (incl. Ultrasound)",
-    "estimated_amount": 2983.75,
-    "cta_basis": "Screening\u002BTVU",
+    "estimated_amount": 1722.50,
+    "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
   },
   {
     "subject_id": "S-12-042",
     "proposed_visit_label": "Screening Visit",
-    "estimated_amount": 2153.13,
+    "estimated_amount": 1722.50,
     "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"
@@ -50,7 +50,7 @@
   {
     "subject_id": "S-12-043",
     "proposed_visit_label": "Screening Visit",
-    "estimated_amount": 2153.13,
+    "estimated_amount": 1722.50,
     "cta_basis": "Screening",
     "evidence": "CTMS visit with no invoice or autopay",
     "confidence": "MEDIUM"

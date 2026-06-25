@@ -1,6 +1,6 @@
 {
   "study_id": "MRD-204-017",
-  "site_id": "ARP-12",
+  "site_id": null,
   "investigator": "Elena Park",
   "payment_to_remittance": [
     {
@@ -575,8 +575,8 @@
   "activity_to_cta": [
     {
       "activity_id": "activity-9042639886a8",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -599,8 +599,8 @@
     },
     {
       "activity_id": "activity-8fa232be2b14",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -611,14 +611,14 @@
     },
     {
       "activity_id": "activity-2e63f24030c6",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
       "activity_id": "activity-4e347e1d3786",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -629,8 +629,8 @@
     },
     {
       "activity_id": "activity-91fc11658c1c",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -641,20 +641,20 @@
     },
     {
       "activity_id": "activity-9e3554f248c8",
-      "cta_visit_label": "UnschVisit",
-      "cta_amount": 605.00,
-      "match_confidence": "MEDIUM"
+      "cta_visit_label": null,
+      "cta_amount": null,
+      "match_confidence": null
     },
     {
       "activity_id": "activity-18170d864a8b",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
       "activity_id": "activity-40617096eeb1",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -665,20 +665,20 @@
     },
     {
       "activity_id": "activity-d2db99cd135d",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
       "activity_id": "activity-8cdf049cea24",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
       "activity_id": "activity-3c8dca7cce74",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {
@@ -689,8 +689,8 @@
     },
     {
       "activity_id": "activity-a121e2159081",
-      "cta_visit_label": "Screening\u002BTVU",
-      "cta_amount": 2387.00,
+      "cta_visit_label": "Screening",
+      "cta_amount": 1722.50,
       "match_confidence": "MEDIUM"
     },
     {

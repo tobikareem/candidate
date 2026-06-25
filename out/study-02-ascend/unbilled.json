@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "subject_id": "S-33-003",
+    "proposed_visit_label": "Unsch Repeat Hematology",
+    "estimated_amount": 112.40,
+    "cta_basis": "Repeat Hematology",
+    "evidence": "CTMS visit with no invoice or autopay",
+    "confidence": "MEDIUM"
+  },
+  {
+    "subject_id": "S-33-001",
+    "proposed_visit_label": "UNSCH Repeat Hematology",
+    "estimated_amount": 112.40,
+    "cta_basis": "Repeat Hematology",
+    "evidence": "CTMS visit with no invoice or autopay",
+    "confidence": "MEDIUM"
+  },
+  {
+    "subject_id": "S-33-002",
+    "proposed_visit_label": "[Ad Hoc] Unscheduled Visit",
+    "estimated_amount": 0.00,
+    "cta_basis": null,
+    "evidence": "CTMS visit with no invoice or autopay",
+    "confidence": null
+  }
+]

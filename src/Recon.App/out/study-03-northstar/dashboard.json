@@ -1,12 +1,12 @@
 {
   "study_id": "CLX-115-300",
-  "site_id": "ARP-03",
-  "investigator": "Dana Whitfield",
+  "site_id": null,
+  "investigator": null,
   "total_billed": 8806.30,
   "total_collected": 8806.30,
   "outstanding_ar": 0,
   "holdback_withheld": 0,
   "unbilled_estimate": 463.75,
   "exceptions_count": 1,
-  "avg_days_to_payment": 34.2
+  "avg_days_to_payment": null
 }

@@ -52,6 +52,7 @@ public sealed class CtaFixtureLoader
                 Caps: caps)
             {
                 SourceDocument = f.SourceDocument,
+                SiteId = f.SiteNumber,
             };
 
             store.AddStudies(new[] { study });
@@ -111,4 +112,6 @@ internal sealed record CtaLineFixture(
     decimal BaseAmount,
     string Kind,
     decimal? Cap);
+
+
 

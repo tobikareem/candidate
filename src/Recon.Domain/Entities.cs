@@ -13,6 +13,7 @@ public record Study(
     IReadOnlyDictionary<string, decimal> Caps)
 {
     public string SourceDocument { get; init; } = "";
+    public string? SiteId { get; init; }
 }
 
 public record Site(string Id, string Name, string? Address, string? Number)
@@ -30,7 +31,7 @@ public record CtaBudgetLine(
     string StudyId,
     string VisitLabel,
     string? Procedure,
-    decimal BaseAmount, // CTA list price before any overhead markup
+    decimal BaseAmount,
     CtaLineKind Kind,
     decimal? Cap)
 {
@@ -55,7 +56,8 @@ public record Invoice(
     string Id,
     string PrintedNumber,
     string PrintedStudyCode,
-    string StudyId, 
+    string Payor,
+    string StudyId,
     string? SubjectId,
     DateOnly IssueDate,
     DateOnly ServiceDate,
@@ -75,26 +77,26 @@ public record InvoiceLine(
 
 public record Payment(
     string Id,
-    string PrintedRef,       
+    string PrintedRef,
     string StudyId,
-    string Payor,           
+    string Payor,
     DateOnly Date,
     decimal Amount,
     PaymentMethod Method,
     Vendor SourceVendor,
-    string? RemittanceId,    // the remittance this settles
-    string? BankTxnId)       // the deposit it ties to 
+    string? RemittanceId,
+    string? BankTxnId)
 {
     public string SourceDocument { get; init; } = "";
 }
 
 public record Remittance(
     string Id,
-    string PrintedRef,       // LR-001 / R-002 / R-INV-S01 — ties to the payment of the same ref (chain 1)
-    string Payor,            
-    string StudyId,          
+    string PrintedRef,
+    string Payor,
+    string StudyId,
     DateOnly Date,
-    decimal NetPaid,         
+    decimal NetPaid,
     IReadOnlyList<RemittanceLine> Lines)
 {
     public string SourceDocument { get; init; } = "";
@@ -111,10 +113,10 @@ public record RemittanceLine(
 
 public record Autopay(
     string Id,
-    string PrintedRef,       // AP-001
+    string PrintedRef,
     string StudyId,
     string? SubjectId,
-    string? VisitLabel,      
+    string? VisitLabel,
     DateOnly ScheduledDate,
     decimal ScheduledAmount,
     AutopayStatus Status,
@@ -125,14 +127,13 @@ public record Autopay(
     public string SourceDocument { get; init; } = "";
 }
 
-
 public record BankTransaction(
     string Id,
-    string ExternalId,       
+    string ExternalId,
     DateOnly Date,
     string RawName,
     string Category,
-    decimal Amount, 
+    decimal Amount,
     bool IsDeposit,
     string? MatchedStudyId,
     string? MatchedTo)
@@ -154,5 +155,3 @@ public record CommFact(
     CommFactKind Kind,
     string TargetRef,
     string Note);
-
-
