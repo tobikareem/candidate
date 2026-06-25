@@ -1,0 +1,74 @@
+[
+  {
+    "source_document": "CTA_MRD-204-017.pdf",
+    "protocol": "MRD-204-017",
+    "study_code": "HORIZON",
+    "out_slug": "study-01-horizon",
+    "sponsor": "Meridian Therapeutics, Inc.",
+    "cro": null,
+    "site_number": "ARP-12",
+    "site_name": "Atlas Research Partners",
+    "investigator": "Elena Park",
+    "holdback_pct": 0.10,
+    "overhead_pct": 0.25,
+    "payment_terms_days": 30,
+    "budget_lines": [
+      { "visit_label": "Screening+TVU", "procedure": null, "base_amount": 2387.00, "kind": "Visit", "cap": null },
+      { "visit_label": "Screening", "procedure": null, "base_amount": 1722.50, "kind": "Visit", "cap": null },
+      { "visit_label": "DXA", "procedure": null, "base_amount": 1099.00, "kind": "Visit", "cap": null },
+      { "visit_label": "TVU", "procedure": null, "base_amount": 664.50, "kind": "Visit", "cap": null },
+      { "visit_label": "Imaging", "procedure": null, "base_amount": 1868.50, "kind": "Visit", "cap": null },
+      { "visit_label": "UnschLab", "procedure": null, "base_amount": 371.00, "kind": "Visit", "cap": null },
+      { "visit_label": "UnschVisit", "procedure": null, "base_amount": 605.00, "kind": "Visit", "cap": null },
+      { "visit_label": "Site Start-up", "procedure": null, "base_amount": 14317.50, "kind": "SiteFee", "cap": null },
+      { "visit_label": "Administrative Fee", "procedure": null, "base_amount": 1284.60, "kind": "SiteFee", "cap": null },
+      { "visit_label": "Pharmacy Annual Maintenance", "procedure": null, "base_amount": 3265.40, "kind": "SiteFee", "cap": null },
+      { "visit_label": "Advertising / Patient Recruitment", "procedure": null, "base_amount": 11642.80, "kind": "SiteFee", "cap": null },
+      { "visit_label": "Pre-screen Chart Review", "procedure": null, "base_amount": 52.85, "kind": "SiteFee", "cap": 3000.00 },
+      { "visit_label": "eDiary Completion", "procedure": null, "base_amount": 83.60, "kind": "SiteFee", "cap": null }
+    ]
+  },
+  {
+    "source_document": "CTA_VTX-330-201.pdf",
+    "protocol": "VTX-330-201",
+    "study_code": "ASCEND",
+    "out_slug": "study-02-ascend",
+    "sponsor": "Vantix Biosciences",
+    "cro": null,
+    "site_number": "ARP-12",
+    "investigator": "Elena Park",
+    "holdback_pct": 0.00,
+    "overhead_pct": 0.00,
+    "payment_terms_days": 45,
+    "budget_lines": [
+      { "visit_label": "Screening", "procedure": null, "base_amount": 685.40, "kind": "Visit", "cap": null },
+      { "visit_label": "V1", "procedure": null, "base_amount": 418.75, "kind": "Visit", "cap": null },
+      { "visit_label": "V2", "procedure": null, "base_amount": 842.60, "kind": "Visit", "cap": null },
+      { "visit_label": "V3", "procedure": null, "base_amount": 523.10, "kind": "Visit", "cap": null },
+      { "visit_label": "V4", "procedure": null, "base_amount": 471.50, "kind": "Visit", "cap": null },
+      { "visit_label": "Repeat Hematology", "procedure": "Blood Draw, Central Lab", "base_amount": 112.40, "kind": "Procedure", "cap": null },
+      { "visit_label": "Site Initiation / Start-up", "procedure": null, "base_amount": 8000.00, "kind": "SiteFee", "cap": null },
+      { "visit_label": "IRB / Regulatory Submission", "procedure": null, "base_amount": 3500.00, "kind": "SiteFee", "cap": null }
+    ]
+  },
+  {
+    "source_document": "CTA_CLX-115-300.pdf",
+    "protocol": "CLX-115-300",
+    "study_code": "NORTHSTAR",
+    "out_slug": "study-03-northstar",
+    "sponsor": "Calyx Pharma",
+    "cro": null,
+    "site_number": "ARP-03",
+    "investigator": "Dana Whitfield",
+    "holdback_pct": 0.00,
+    "overhead_pct": 0.00,
+    "payment_terms_days": 30,
+    "budget_lines": [
+      { "visit_label": "Screening Visit", "procedure": null, "base_amount": 742.30, "kind": "Visit", "cap": null },
+      { "visit_label": "Visit 1", "procedure": null, "base_amount": 518.60, "kind": "Visit", "cap": null },
+      { "visit_label": "Visit 2", "procedure": null, "base_amount": 463.75, "kind": "Visit", "cap": null },
+      { "visit_label": "Visit 3", "procedure": null, "base_amount": 451.20, "kind": "Visit", "cap": null },
+      { "visit_label": "Site Start-up", "procedure": null, "base_amount": 6284.50, "kind": "SiteFee", "cap": null }
+    ]
+  }
+]

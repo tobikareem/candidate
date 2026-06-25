@@ -1,0 +1,41 @@
+[
+  {
+    "source_document": "slack_2026-06-02.md",
+    "channel": "slack",
+    "date": "2026-06-02",
+    "body": "Reconciled HORIZON against the bank; everything's collected except INV-105 (pharmacy maintenance, $13,061.60), which Meridian still hasn't paid. That's our only open item.",
+    "facts": [
+      { "kind": "ConfirmsUnpaid", "target_ref": "INV-105", "note": "HORIZON only open item; amount 13061.60 confirmed from invoice." }
+    ]
+  },
+  {
+    "source_document": "email_2026-05-19.eml",
+    "channel": "email",
+    "date": "2026-05-19",
+    "body": "Regarding the $13,061.60 pharmacy maintenance invoice covering 2023-2026: no payment will be released until sponsor review closes. Please do not re-bill.",
+    "facts": [
+      { "kind": "Dispute", "target_ref": "INV-105", "note": "Sponsor review pending; confirms no payment released." },
+      { "kind": "ConfirmsUnpaid", "target_ref": "INV-105", "note": "No payment released until review closes." }
+    ]
+  },
+  {
+    "source_document": "email_2026-04-28.eml",
+    "channel": "email",
+    "date": "2026-04-28",
+    "body": "ASCEND: two visit autopays show as issued but never deposited: S-33-003 V3 (~$523, ~4/20) and S-33-004 V1 (~$419, ~3/2). S-33-003 Screening came through at $627.55 but schedule is $685.40.",
+    "facts": [
+      { "kind": "ConfirmsUnpaid", "target_ref": "S-33-003 V3", "note": "Authorized autopay around 523.10 did not deposit." },
+      { "kind": "ConfirmsUnpaid", "target_ref": "S-33-004 V1", "note": "Authorized autopay around 418.75 did not deposit." },
+      { "kind": "Dispute", "target_ref": "S-33-003 Screening", "note": "Wrong amount deposited: 627.55 vs scheduled 685.40." }
+    ]
+  },
+  {
+    "source_document": "slack_2026-04-29.md",
+    "channel": "slack",
+    "date": "2026-04-29",
+    "body": "ASCEND repeat-hematology draws are not in the autopay register yet; they bill per-procedure.",
+    "facts": [
+      { "kind": "Clarifies", "target_ref": "Repeat Hematology", "note": "Unscheduled repeat hematology is procedure-billed, not autopay." }
+    ]
+  }
+]

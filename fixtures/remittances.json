@@ -1,0 +1,59 @@
+[
+  { "source_document": "R-001_Ledger_Run.pdf", "printed_ref": "LR-001", "payor": "Meridian Therapeutics", "date": "2022-09-29", "method": "ACH", "net_paid": 7354.69, "lines": [
+    { "invoice_ref": "INV-001", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 },
+    { "invoice_ref": "INV-003", "gross": 830.63, "adjustment": -83.06, "paid": 747.57 },
+    { "invoice_ref": "INV-D003", "gross": 1373.75, "adjustment": -137.37, "paid": 1236.38 },
+    { "invoice_ref": "INV-004", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 }
+  ]},
+  { "source_document": "R-002_Cordis_Payment_Advice.pdf", "printed_ref": "R-002", "payor": "Cordis Clinical", "date": "2022-07-05", "method": "ACH", "net_paid": 1937.82, "lines": [
+    { "invoice_ref": "INV-002", "gross": 2153.13, "adjustment": -215.31, "paid": 1937.82 }
+  ]},
+  { "source_document": "R-003_Ledger_Run.pdf", "printed_ref": "LR-003", "payor": "Meridian Therapeutics", "date": "2022-10-27", "method": "ACH", "net_paid": 9410.63, "lines": [
+    { "invoice_ref": "INV-005", "gross": 2335.63, "adjustment": -233.56, "paid": 2102.07 },
+    { "invoice_ref": "INV-009", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 },
+    { "invoice_ref": "INV-010", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 },
+    { "invoice_ref": "INV-012", "gross": 2153.13, "adjustment": -215.31, "paid": 1937.82 }
+  ]},
+  { "source_document": "R-004_Ledger_Run.pdf", "printed_ref": "LR-004", "payor": "Meridian Therapeutics", "date": "2023-01-12", "method": "ACH", "net_paid": 9154.12, "lines": [
+    { "invoice_ref": "INV-013", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 },
+    { "invoice_ref": "INV-014", "gross": 463.75, "adjustment": -46.37, "paid": 417.38 },
+    { "invoice_ref": "INV-015", "gross": 756.25, "adjustment": -75.62, "paid": 680.63 },
+    { "invoice_ref": "INV-017", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 },
+    { "invoice_ref": "INV-018", "gross": 2983.75, "adjustment": -298.37, "paid": 2685.38 }
+  ]},
+  { "source_document": "R-006_Ledger_Run.pdf", "printed_ref": "LR-006", "payor": "Meridian Therapeutics", "date": "2024-10-18", "method": "ACH", "net_paid": 5008.10, "lines": [
+    { "invoice_ref": "INV-101", "gross": 2438.90, "adjustment": 0, "paid": 2438.90 },
+    { "invoice_ref": "INV-103", "gross": 2569.20, "adjustment": 0, "paid": 2569.20 }
+  ]},
+  { "source_document": "R-007_Ledger_Run.pdf", "printed_ref": "LR-007", "payor": "Meridian Therapeutics", "date": "2023-10-05", "method": "ACH", "net_paid": 11642.80, "lines": [
+    { "invoice_ref": "INV-102", "gross": 11642.80, "adjustment": 0, "paid": 11642.80 }
+  ]},
+  { "source_document": "R-008_Ledger_Run.pdf", "printed_ref": "LR-008", "payor": "Meridian Therapeutics", "date": "2026-02-24", "method": "ACH", "net_paid": 1284.60, "lines": [
+    { "invoice_ref": "INV-104", "gross": 1284.60, "adjustment": 0, "paid": 1284.60 }
+  ]},
+  { "source_document": "R-009_Ledger_Run.pdf", "printed_ref": "LR-009", "payor": "Meridian Therapeutics", "date": "2025-12-12", "method": "WIRE", "net_paid": 19517.20, "lines": [
+    { "invoice_ref": "INV-302", "gross": 3382.40, "adjustment": 0, "paid": 3382.40 },
+    { "invoice_ref": "INV-303", "gross": 16134.80, "adjustment": 0, "paid": 16134.80 }
+  ]},
+  { "source_document": "R-010_Ledger_Run.pdf", "printed_ref": "LR-010", "payor": "Meridian Therapeutics", "date": "2023-05-12", "method": "ACH", "net_paid": 308.34, "lines": [
+    { "invoice_ref": "INV-D020", "gross": 308.34, "adjustment": 0, "paid": 308.34 }
+  ]},
+  { "source_document": "R-011_Ledger_Run.pdf", "printed_ref": "LR-011", "payor": "Meridian Therapeutics", "date": "2022-12-05", "method": "ACH", "net_paid": 2102.07, "lines": [
+    { "invoice_ref": "INV-021", "gross": 2335.63, "adjustment": -233.56, "paid": 2102.07 }
+  ]},
+  { "source_document": "R-INV-S01_Vantix_Remittance.pdf", "printed_ref": "R-INV-S01", "payor": "Vantix Biosciences", "date": "2025-12-30", "method": "ACH", "net_paid": 10842.50, "lines": [
+    { "invoice_ref": "INV-100", "gross": 10842.50, "adjustment": 0, "paid": 10842.50 }
+  ]},
+  { "source_document": "R-INV-S02_Vantix_Remittance.pdf", "printed_ref": "R-INV-S02", "payor": "Vantix Biosciences", "date": "2025-12-30", "method": "ACH", "net_paid": 2940.60, "lines": [
+    { "invoice_ref": "INV-101", "gross": 2940.60, "adjustment": 0, "paid": 2940.60 }
+  ]},
+  { "source_document": "R-N00_Ramp.pdf", "printed_ref": "RMP-N00", "payor": "Calyx Pharma", "date": "2026-01-20", "method": "ACH", "net_paid": 6284.50, "lines": [
+    { "invoice_ref": "INV-100", "gross": 6284.50, "adjustment": 0, "paid": 6284.50 }
+  ]},
+  { "source_document": "R-N01_Ramp.pdf", "printed_ref": "RMP-N01", "payor": "Calyx Pharma", "date": "2026-04-05", "method": "CARD", "net_paid": 2521.80, "lines": [
+    { "invoice_ref": "INV-001", "gross": 742.30, "adjustment": 0, "paid": 742.30 },
+    { "invoice_ref": "INV-002", "gross": 518.60, "adjustment": 0, "paid": 518.60 },
+    { "invoice_ref": "INV-003", "gross": 742.30, "adjustment": 0, "paid": 742.30 },
+    { "invoice_ref": "INV-004", "gross": 518.60, "adjustment": 0, "paid": 518.60 }
+  ]}
+]
