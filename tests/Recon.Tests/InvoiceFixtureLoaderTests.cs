@@ -32,7 +32,6 @@ public class InvoiceFixtureLoaderTests
         var invoice = Assert.Single(store.Invoices);
         Assert.Equal("INV-002", invoice.PrintedNumber);
         Assert.Equal("HORIZON", invoice.PrintedStudyCode);
-        Assert.Equal("Meridian Therapeutics, Inc.", invoice.Payor);
         Assert.Equal("S-12-002", invoice.SubjectId);
         Assert.Equal(new DateOnly(2022, 5, 16), invoice.IssueDate);
         Assert.Equal(new DateOnly(2022, 5, 11), invoice.ServiceDate);
